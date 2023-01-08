@@ -1,0 +1,23 @@
+
+body{
+    background: linear-gradient(rgb(55,118,150)10%,rgb(53, 53, 53)40%);
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+hr {
+    width: 80%;
+    margin: 30px auto;
+}
+
+footer{
+    height: 100px;
+    background: linear-gradient(rgb(53, 53, 53), rgb(33, 33, 33));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+

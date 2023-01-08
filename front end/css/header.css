@@ -1,0 +1,123 @@
+/*header*/
+.header {
+    position: relative;
+    
+}
+/*imagen*/
+.header::before{
+    position: absolute;
+    background-image: url(../unnamed.jpg);
+    background-size: cover;
+    width: 275px;
+    height: 275px;
+    border-radius: 100%;
+    z-index: 10;
+    content: '';
+    left: 40%;
+    top: 250px;
+    border: 3px solid black;
+}
+/*contenedor del boton y la lista*/
+.header__conteiner{
+    background: rgba(33, 33, 33);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    z-index: 15;
+    font-family: 'Play', sans-serif;
+}
+/*boton*/
+.header__btn{
+    height: 30px;
+    width: 100px;
+    margin-left: 15px;
+    padding: 0 20px;
+    font-size: 18px;
+    border: none;
+    background: rgb(58, 107, 134);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 10px white;
+    transition: 0.4s all;
+}
+.header__btn:hover{
+    background: rgb(77, 143, 178);
+}
+/*contenedor de la lista (ul)*/
+.header__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+/*listas*/
+.header__li{
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s all;
+}
+.header__li:hover{
+    background: rgba(93,172,193, 0.534);
+}
+/*links de referencia*/
+.header__a{
+    text-decoration: none;
+    color: rgb(93,172,193);
+    animation: prende 2s infinite ease-in-out;
+}
+@keyframes prende{
+    0%{
+        color: rgb(93,172,193);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px white;
+    }
+}
+/*titulo*/
+.header__titulo{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+    top: -290px;
+    text-align: center;
+    font-weight: 500;
+}
+/*texto*/
+.header__titulo p {
+    background: rgba(0, 0, 0, 0.423);
+    display: inline-block;
+    text-align:center;
+    padding: 20px 0;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-top: 65px;
+    font-family: 'Zen Dots', cursive;
+    width: 300px;
+}
+
+
+.img {
+    width: 100%;
+    height: 330px;
+    contain: content;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    top: 62px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 0 30px rgb(55,118,150);
+}
+.img img{
+    width: 100%;
+}

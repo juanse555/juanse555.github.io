@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 700px;
+    margin: 0 auto ;
+    border-radius: 50px;
+    color: white;
+}
+
+.main__about{
+    width: 85%;
+    margin: 70px auto;
+}
+
+.main__about___titulo{
+    font-size: 40px;
+}
+.main__about___texto{
+    font-size: 17px;
+}
